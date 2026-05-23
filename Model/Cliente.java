@@ -1,19 +1,23 @@
 package Model;
 
+// Classe que representa um cliente no sistema
 public class Cliente {
 
+    // Atributos do cliente
     private int id;
     private String nome;
     private String email;
     private String telefone;
 
-    // Construtor
+    // Construtor usado ao buscar cliente do banco (id já existe)
     public Cliente (int id, String nome, String email, String telefone) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
     }
+
+    // Construtor usado ao criar cliente (banco gera o id)
     public Cliente(String nome, String email, String telefone) {
         this.nome = nome;
         this.email = email;
